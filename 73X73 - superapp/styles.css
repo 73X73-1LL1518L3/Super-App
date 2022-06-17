@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Général*/
+
+body{
+    font-family: "Open Sans", sans-serif;
+    height: 1200px;
+}
+
+.page{
+    width: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+/* En-tête */
+.menu-container{
+    background-color: #dd5555;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content:start;
+}
+
+.menu{
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 60px;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.nav-logo{
+    display: flex;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu{
+    display: flex;
+    background-color: rgb(221, 85, 85);
+    color: #fff;
+    text-decoration: none;
+    height: 60px;
+
+    border: none;
+    padding: 16px 25px 15px 25px;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-menu:hover{
+    background-color: rgb(240, 90, 90);
+}
+.nav-menu:active{
+    background-color: rgb(200, 80, 80);
+}
+.nav-menu-first{
+    background-color: rgb(166, 64, 64);
+    height: 60px;
+}
+
+.fleche{
+    z-index: 2;
+    position: fixed;
+    width: 75px;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+/* Contenu */
+.presentation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    width: 100%;
+    height: 1000px;
+
+}
+.smartphone{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.smartphone img{
+    width: 1903px;
+    height: 1000px;
+}
+
+.container-titre{
+    display: flex;
+    width: 600px;
+    height: 300px;
+}
+
+.titre{
+    z-index: 1;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.trois-boutons{
+    display: flex;
+    width: 500px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+.ligne{
+    height: 1px;
+    width: 500px;
+    border-top: 1px solid #fff;
+    margin-top: 30px;
+}
+
+.bouton-titre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 60px;
+    font-size: 25px;
+}
+.bouton-titre:hover{
+    cursor: pointer;
+}
+.bouton-titre p{
+    align-items: center;
+    text-align: center;
+}
+
+.logo-titre{
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+}
+
+.container-fonction-logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.titre-fonction{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+
+.container-logo-rond{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    font-size: 150%;
+    width: 500px;
+    height: 500px;
+    margin: 0 50px 0 0px;
+}
+.logo-rond{
+    display: flex;
+    background-color: #dd5555;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-bottom: 25px;
+}
+.titre-logo{
+    font-size: 40px;
+    margin: 10px 0 10px 0;
+}
+.logo-rond img{
+    width: 120px;
+    height: 120px;
+}
+
+/*Introduction présentation équipe*/
+.equipe-titre{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+
+.container-clones{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.titre-clones{
+    z-index: 1;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    font-family: "Open Sans";
+    font-size: 80px;
+}
+.photo-clones{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*Présentation équipe*/
+.container-perso{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+.perso{
+    display: flex;
+    border-radius: 100%;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 35px;
+    margin: 40px 40px 40px 40px;
+}
+
+.perso p{
+    margin-bottom: 20px;
+}
+
+.photo-perso{
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+.lui-ecrire{
+    width: 150px;
+    height: 50px;
+    background-color: #dd5555;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.lui-ecrire img{
+    margin-right: 10px;
+}
+
+
+.lui-ecrire:hover{
+    background-color: rgb(240, 90, 90);
+    cursor: pointer;
+}
+.lui-ecrire:active{
+    background-color: rgb(200, 80, 80);
+}
+
+
+
+/* Bas de page*/
+
+footer{
+    display: flex;
+    background-color: #dd5555;
+    color: #fff;
+    font-size: 30px;
+}
+.container-message{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+label{
+    font-size: 20px;
+}
+
+.form-row{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ligne-message-un{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.form-nom input,
+.form-email input{
+    width: 480px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 2px;
+    border: none;
+    padding: 15px;
+    margin-top: 10px;
+}
+.form-email input{
+    margin-left: 1px;
+}
+
+
+.ligne-message-deux{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 20px;
+}
+textarea{
+    width: 1000px;
+    height: 150px;
+    font-size: 20px;
+    border-radius: 2px;
+    border: none;
+    padding: 10px 0 0 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.form-envoyer button{
+    display: flex;
+    width: 145px;
+    height: 48px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.form-envoyer button img{
+    width: 24px;
+    margin-right: 10px;
+}
+
+
+
+
+
+/* Smartphone */
+@media only screen and (min-width= 400px) and (max-width= 600px) {
+    
+}
+
+
+/* Smartphone Large*/
+@media only screen and (min-width= 601px) and (max-width= 800px)  {
+    
+}
+
+
+/* Tablette portrait */
+@media only screen and (min-width= 801px) and (max-width= 1000px)  {
+    
+}
+
+
+/* Tablette paysage*/
+@media only screen and (min-width= 1001px) and (max-width= 1440px) {
+    
+}
+
+
+/* Ordinateur*/
+@media only screen and (min-width= 1441px) {
+    
+}
